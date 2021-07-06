@@ -22,6 +22,15 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
+<label for="customer">顧客</label><br />
+<select name="customer">
+<option value=A社>A社</option>
+<option value=B社>B社</option>
+<option value=C社>C社</option>
+<option value=D社>D社</option>
+</select>
+<br /><br />
+
 <label for="content">内容</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />

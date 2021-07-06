@@ -51,6 +51,9 @@ public class Report {
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
+    @Column(name = "customer", length = 255, nullable = false)
+    private String customer;
+
     @Lob
     @Column(name = "content", nullable = false)
     private String content;
@@ -115,5 +118,13 @@ public class Report {
 
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
+    }
+
+    public String getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(String customer) {
+        this.customer = customer;
     }
 }
